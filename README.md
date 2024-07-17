@@ -1,3 +1,3 @@
 # mastermern
 <br>
-Mastering Mern from scratch
+Mastering mern from scratch
