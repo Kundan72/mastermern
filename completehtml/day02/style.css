@@ -1,0 +1,30 @@
+/* p{
+    background : rgb(177, 177, 252);
+}
+a{
+    background: rgb(226, 118, 147);
+}
+div{
+    background: yellow;
+}
+span{
+    background: rgb(196, 150, 239);
+} */
+
+
+/* ID and Class */
+
+.red{
+    background: red;
+}
+.bg-yellow{
+    background: rgb(244, 244, 161);
+}
+
+#firstdiv{
+    color: blue;
+}
+#seconddiv{
+    color: white;
+    background: rgb(139, 58, 238);
+}
