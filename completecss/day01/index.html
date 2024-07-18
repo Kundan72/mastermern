@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day01 of CSS</title>
+    <link rel="stylesheet" href="style.css"> <!--External CSS-->
+    <style>
+        /* Internal CSS*/
+        /* div , span{
+            color: rgb(250, 1, 1);
+            background: rgb(242, 255, 2);
+        } */
+        #blue{
+            color: rgb(0, 21, 246);
+        }
+        h1{
+            background: rgb(221, 208, 208);
+        }
+        
+        .red{
+            color: red;
+        }
+        div>p{
+            color: rgb(241, 28, 241);
+        }
+        /* where p is 1st chile of div */
+        /* p:first-child{
+            color: lightcoral;
+        } */
+         
+        /* div p{
+            color: rgb(243, 26, 243);
+        } */
+        /* UNIVERSAL SELCTOR */
+        /* *{
+        margin:0;
+        padding:0;
+    } */
+
+    /* Pseudo Selector */
+    a:visited{
+        color:rgb(21, 215, 0)
+    }
+    /* before visiting color red */
+    a:link{
+        color: rgb(240, 81, 81);
+    }
+    /* when clicked color blue */
+    a:active{
+        background: blue;
+    }
+    a:hover{
+        background: yellow;
+    }
+    </style>
+</head>
+<body>
+    <p>I am first</p>
+    <p>I am sec</p>
+    <h1 style="color: rgb(174, 0, 255);">CSS</h1> <!--Inline CSS-->
+    
+    <div id="blue">Hey it's CSS file</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusamus perferendis ipsum eius ut, non quibusdam eligendi vitae minus provident cupiditate molestias eveniet ducimus vel sed! Quod perspiciatis earum velit ea provident harum. Est!</p>
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt quod alias deleniti fugit
+    </span>
+
+    <h1>CSS Selectors</h1>
+    <h3>Element selectors</h3><!--div, span, p-->
+    <h3>Attribute selectors</h3> <!--class,id-->
+
+    <div>
+        I am div without class red
+    </div>
+    <div class="red">Div with class red</div>
+    <div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos facere quae, nulla vitae sunt repellendus? Alias reprehenderit sint, nobis natus mollitia molestiae vero at vitae, blanditiis excepturi numquam provident, iusto eos. Iste cum dignissimos deleniti officia esse odio vero vel adipisci, nostrum eos nulla aut! Nihil, earum. Praesentium, ea repellendus! Nihil commodi impedit excepturi dolores, eum porro delectus eius, officia earum velit, quae nisi laborum accusamus ut.
+        </p>
+        <!-- div's direct child para no in b/w  div > p { colr:blue} -->
+    </div>
+
+    <div>
+        <span><div>
+            <p>
+                I am inside div not direct but div's grandchild
+            </p>
+        </div>
+        </span>
+        <!-- div p {color:blue} -->
+    </div>
+    <a target="_blank" href="https://twitter.com">Twitter</a>
+    <a target="blank" href="https://instagram.com">Insta</a>
+    <a target="blank" href="https://facebook.com">Facebook</a>
+</body>
+</html>
