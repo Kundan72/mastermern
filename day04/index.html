@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        h3 {
+            color: rgb(255, 204, 0);
+        }
+        .blue{
+            color: blue ; /*!important > other selectors*/
+        }
+        .yellow{
+            color: yellow;
+        }
+        /* specificity calc 1+10 = 11 i.e more thana all 10's */
+        h3.purple{
+            color: rgb(112, 4, 179);
+        }
+        /* data-x is attribute*/
+        [data-x=a]{
+            background-color: rgb(161, 255, 255);
+        }
+    </style>
 </head>
+
 <body>
     <h1>
         CSS Box Model
@@ -20,7 +42,7 @@
     <div>
         <h1>Fonts</h1>
         <p>
-            All about fonts styling 
+            All about fonts styling
         </p>
     </div>
     <h2>
@@ -32,5 +54,9 @@
         <li>RGB</li>
         <li>RGBA with alpha</li>
     </ol>
+    <br>
+    <h3 class="yellow blue purple" data-x="a">CSS Specificity</h3>
+    <!-- !important > inline > id selector > class or attribute > element > universal selector -->
 </body>
+
 </html>
