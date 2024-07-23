@@ -1,0 +1,23 @@
+/* DISPLAY Properties */
+.displaybox1 {
+    background: rgb(255, 255, 255);
+    display: inline-block; /*displays block elemnt as inline */
+    border: 2px solid blue;
+    width: 144px;
+    padding: 45px;
+    margin: 34px;
+    display: inline-flex;  /*https://developer.mozilla.org/en-US/docs/Web/CSS/display*/
+    justify-content: center;
+}
+
+.box1{
+    /* display: none; */  /*remove existence*/
+    /* visibility: hidden;  cotent hidden but occupied space */
+}
+
+.span1{
+    color: rgb(230, 181, 249);
+    background: #510867;
+    margin: 10px;
+    padding: 45px;
+}

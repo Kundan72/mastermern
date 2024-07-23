@@ -7,6 +7,7 @@
     <title>Day05 of css</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* SIZING UNITS */
         * {
             margin: 0;
             padding: 0;
@@ -14,23 +15,25 @@
 
         .box {
             /* box-sizing: border-box; */
-            background: aqua;
+            background: rgb(189, 123, 250);
             width: 80vw;
             /*vw is compatible for all devise screen size*/
             height: 10vh;
             border: 2px solid black;
-            margin: auto; /*only for block level elements*/
+            margin: auto;
+            /*only for block level elements*/
             /* height: 50vmin; vmin and vmax height and width changes according to phone and lap */
         }
 
         .container {
             /* box-sizing: border-box; */
-            background: aqua;
+            background: rgb(86, 148, 255);
             width: 80vw;
             height: 80vh;
             border: 2px solid black;
             margin: 23px auto;
-            font-size: 2em; /*16px * 2=32px 2em mulitplied by default px size*/
+            font-size: 2em;
+            /*16px * 2=32px 2em mulitplied by default px size*/
             min-height: 100vh;
         }
     </style>
@@ -40,7 +43,24 @@
     <h2>Css Sizing Units</h2> <!-- px, vw, vh, rem, em , vmin, vmax, min-height, min-width-->
     <div class="box">Hey its's Box here</div>
     <div class="container">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eos aspernatur distinctio! Repellendus sit cumque necessitatibus recusandae aliquam animi veniam quod quasi repudiandae!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eos aspernatur distinctio! Repellendus sit
+        cumque necessitatibus recusandae aliquam animi veniam quod quasi repudiandae!
     </div>
+
+
+    <!-- DISPLAY Properties -->
+    <h1 style="display: flex; justify-content: center;">Display Properties</h1>
+    <div class="displaybox1 box1">
+        Hi, it's box 1
+    </div>
+    <div class="displaybox1">
+        Hey, it's box 2
+    </div>
+
+    <span class="span1">
+        hey, it's span 1
+    </span>
+    <span>span2</span>
 </body>
+
 </html>
