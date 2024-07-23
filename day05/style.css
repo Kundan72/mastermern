@@ -58,7 +58,7 @@ nav ul li {
     /*emoji inside bg*/
     background: rgba(113, 67, 250, 0.718);
     border: 1px solid black;
-    list-style: disc inside url();
+    /* list-style: disc inside url("#"); */
     /*image url also instead of emoji using one property only list-style */
 
 
