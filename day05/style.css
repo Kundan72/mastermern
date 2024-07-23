@@ -1,23 +1,69 @@
 /* DISPLAY Properties */
 .displaybox1 {
     background: rgb(255, 255, 255);
-    display: inline-block; /*displays block elemnt as inline */
+    display: inline-block;
+    /*displays block elemnt as inline */
     border: 2px solid blue;
     width: 144px;
     padding: 45px;
     margin: 34px;
-    display: inline-flex;  /*https://developer.mozilla.org/en-US/docs/Web/CSS/display*/
+    display: inline-flex;
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/display*/
     justify-content: center;
 }
 
-.box1{
-    /* display: none; */  /*remove existence*/
+.box1 {
+    /* display: none; */
+    /*remove existence*/
     /* visibility: hidden;  cotent hidden but occupied space */
 }
 
-.span1{
+.span1 {
     color: rgb(230, 181, 249);
     background: #510867;
     margin: 10px;
     padding: 45px;
+}
+
+
+/* CSS SHADOWS */
+.shadow {
+    padding: 45px;
+    border: 2px solid black;
+    /* box-shadow: h-offset v-offset blur spread color inset; */
+    box-shadow: 5px 5px 15px 5px #888888;
+
+}
+
+/* for text shaodows */
+.text-element {
+    text-shadow: 3px 2px 4px #c449ea;
+    /*explore from inspect*/
+    margin: 20px;
+    padding: 35px;
+    border: 3px solid rgb(182, 23, 23);
+    border-radius: 16px;
+    /*If border curves outline auto follows it*/
+    /* Outline is extra border not comes under whole box size */
+    outline: 5px solid rgb(0, 0, 0);
+    outline-offset: 20px;
+}
+
+
+/* Styling List */
+nav ul li {
+    list-style-type: "emoji";
+    list-style-type: "😎";
+    list-style-position: inside;
+    /*emoji inside bg*/
+    background: rgba(113, 67, 250, 0.718);
+    border: 1px solid black;
+    list-style: disc inside url();
+    /*image url also instead of emoji using one property only list-style */
+
+
+    /* for navbar
+    padding: 23px;
+    display: inline-flex;
+    list-style: none; */
 }
