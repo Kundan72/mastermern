@@ -12,11 +12,11 @@
     justify-content: center;
 }
 
-.box1 {
+/* .box1 {
     /* display: none; */
     /*remove existence*/
-    /* visibility: hidden;  cotent hidden but occupied space */
-}
+    /* visibility: hidden;  cotent hidden but occupied space 
+} */
 
 .span1 {
     color: rgb(230, 181, 249);
