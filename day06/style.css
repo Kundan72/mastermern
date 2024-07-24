@@ -1,27 +1,61 @@
 /* CSS Position Property */
-.parent{
+.parent {
     margin: 5px;
     padding: 10px;
     border: 3px solid purple;
-    position: absolute; /*every div work under this */
+    position: absolute;  /*static, relative, sticky anything*/
+    /*div work under it's anancestor for other divs*/
+    /*EXCEPTION: transform, filter, perspective also acts as parent ancestor*/
+    /* transform: translate();
+    filter: invert();
+    perspective: 0em;*/
 }
-.box{
+
+.box {
     border: 2px solid black;
-    margin: 30px;
-    padding: 20px;
-    height: 10vh;
+    margin: 3px;
+    padding: 2px;
+    height: 600px;
     width: 70vw;
 }
 
-.box1{
-    background: #fa9595ad;
+.box1 {
+    background: #ff8f8fad;
+    /*position: absolute;/*follows parent absolute ancestor div which is here .parent */
+    /* top: 1px;
+    left: 134px; */
+
+    position: sticky;
+    /*NAV to stick in one postion if scroll when not scoll it acts as a static*/
+    top: 0px;
+    height: 100px;   /*moving in refernce to .parent*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 20;
+
 }
-.box2{
+
+.box2 {
+    position: relative;
+    /*default is static*/
+    left: 50px;
+    top: 40px;
+    z-index: 5; /* for box to be shown above not behind */
     background: aqua;
 }
-.box3{
-background: beige;
+
+.box3 {
+    background: beige;
+    position: fixed;
+    /*fixing in one place in a webpage when scrolling also*/
+    bottom: 0px;
+    left: 6vw;
+    height: 50px;
+    z-index: 10;
 }
-.box4{
-background: rgb(218, 253, 167);
+
+.box4 {
+    background: rgb(218, 253, 167);
+
 }
