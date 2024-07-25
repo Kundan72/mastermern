@@ -50,3 +50,16 @@ p{
         color: rgb(76, 76, 76);
     }
 }
+
+
+
+/* CSS float & clear */
+img{
+    float: right;  /*float right or left */
+}
+.card{
+    border: 1px solid black;
+}
+.cards :nth-child(3){
+    clear: both;  /* div no 3 left & right should be clear*/
+}
