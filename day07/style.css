@@ -6,8 +6,9 @@
     --fontclr: rgb(195, 15, 81); /*globalvariable font brown */
 }
 
-body{
+body > div{
     background: rgb(198, 198, 255);
+    padding: 10px;
 }
 nav{
     background: var(--clr)
@@ -30,4 +31,22 @@ ul li{
 p{
     color: var(--fontclr);
     background: var(--bgclr)
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width:400px){
+    body{
+        background: rgb(158, 158, 236);
+    }
+    ul{
+        flex-direction: column;
+        padding: 0px;
+    }
+    ul li{
+        border: 10px solid rgb(125, 125, 244);
+        padding: 10px 120px;
+        color: rgb(76, 76, 76);
+    }
 }
