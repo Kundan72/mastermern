@@ -1,0 +1,33 @@
+/* CSS Variables can be used as color THEME also*/
+:root{
+    /* global variables */
+    --clr:rgb(67, 67, 255);
+    --bgclr: rgb(198, 198, 255);
+    --fontclr: rgb(195, 15, 81); /*globalvariable font brown */
+}
+
+body{
+    background: rgb(198, 198, 255);
+}
+nav{
+    background: var(--clr)
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    height: 40px;
+    padding: 30px;
+    border: 20px solid rgb(116, 116, 242);
+    background: var(--bgclr, blue); /*if --bgclr not found fallback variable blue*/
+    
+    /* acting as local variable overides brown with yellow */
+    --fontclr:yellow;
+    color: var(--fontclr);
+}
+
+p{
+    color: var(--fontclr);
+    background: var(--bgclr)
+}
