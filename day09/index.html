@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flexbox</title>
+
+    <style>
+        .container{
+            margin: 5px;
+            border: 3px solid rgb(0, 0, 0);
+            height: 80vh;
+            display: flex;   /*dfault left to right*/
+
+            /*justify-content: center;*/  /*Horizontaly center in main axis x axis*/
+            /*justify items not used in flexbox*/
+
+            align-items: center;    /*Vertically center in cross axis y axis  if in one line*/
+
+            align-content: flex-start; /*if items more than one line   wrap-reverse also*/
+
+            /* flex-direction: column-reverse;  can change the direction also of row and column if row column change then main axis becomes vice-versa */
+
+            flex-wrap: wrap;   /*element can't oerflow and hide in phone */
+
+
+            flex-flow: row wrap;
+            gap: 30px;   /*gap b/w row items*/
+            /* row-gap: 50px; */
+            /* column-gap: 50px; */
+            /* gap: 40px 6px;   row and column together*/   
+        } 
+        .items{
+            margin: 5px;
+            padding: 10px;
+            height: 60px;
+            width : 60px;
+            border: 2px solid black;
+            background: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+        <div class="items">11</div>
+        <div class="items">12</div>
+        <div class="items">13</div>
+        <div class="items">14</div>
+        <div class="items">15</div>
+        <div class="items">16</div>
+        <div class="items">17</div>
+        <div class="items">18</div>
+        <div class="items">19</div>
+        <div class="items">20</div>
+        <div class="items">21</div>
+        <div class="items">22</div>
+        <div class="items">23</div>
+        <div class="items">24</div>
+        <div class="items">25</div>
+    </div>
 </body>
 </html>
