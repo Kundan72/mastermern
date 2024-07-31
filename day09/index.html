@@ -19,7 +19,7 @@
 
             align-content: flex-start; /*if items more than one line   wrap-reverse also*/
 
-            /* flex-direction: column-reverse;  can change the direction also of row and column if row column change then main axis becomes vice-versa */
+            /* flex-direction: column-reverse;  can change the direction also of row and column if row column change then main axis changes to cross axis*/
 
             flex-wrap: wrap;   /*element can't oerflow and hide in phone */
 
@@ -38,25 +38,52 @@
             border: 2px solid black;
             background: blueviolet;
         }
+
+
+        /* to place items according to our preference */
+        .order-1{
+            color: rgb(0, 0, 0);
+            background: #e1ff00;
+            order: 1;    /*default order is 0 so 1 will be after */
+        }
+        .order-2{
+            color: white;
+            background: #001be3;
+            order: 2;   /*1<2 after 1 will be 2*/
+        }
+        .order-3{
+            color: white;
+            background: #000;
+            order: 3;    /*2 < 3 so 3 will be at end the more value it will be at end */
+        }
+
+        .item1{
+            /* flex-grow: 20; remove flex wrap and flex flow then use it item will grow on inspecting*/
+            /* flex-shrink: 20;  remove flex wrap and flex flow then use it item will be shrinked on inspecting*/
+            align-self: flex-start;   /*remove align content so that it comes in one line and then use it*/
+        }
+
+
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="items">1</div>
+        <div class="items item1">1</div>
         <div class="items">2</div>
         <div class="items">3</div>
         <div class="items">4</div>
-        <div class="items">5</div>
+        <div class="items order-1">5</div>
         <div class="items">6</div>
         <div class="items">7</div>
-        <div class="items">8</div>
+        <div class="items order-3">8</div>
         <div class="items">9</div>
         <div class="items">10</div>
         <div class="items">11</div>
         <div class="items">12</div>
         <div class="items">13</div>
         <div class="items">14</div>
-        <div class="items">15</div>
+        <div class="items order-2">15</div>
         <div class="items">16</div>
         <div class="items">17</div>
         <div class="items">18</div>
