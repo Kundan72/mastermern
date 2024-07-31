@@ -4,7 +4,7 @@
     padding: 10px;
     border: 3px solid purple;
     position: absolute;  /*static, relative, sticky anything*/
-    /*div work under it's anancestor for other divs*/
+    /*div work under it's ancestor for other divs*/
     /*EXCEPTION: transform, filter, perspective also acts as parent ancestor*/
     /* transform: translate();
     filter: invert();
