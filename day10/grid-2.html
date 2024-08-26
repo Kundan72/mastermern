@@ -9,29 +9,18 @@
         .container{
             border: 2px solid black;
             display: grid;
-            /* grid-template-columns: 120px 100px; */
-            /* can name our rows and column */
-            grid-template-columns: [pehla]120px [doosra]100px [tisra];
-            grid-template-rows: 100px 100px 100px;
+            grid-template-areas: "nav nav nav"
+                                "side article article";
         }
         .item{
             border: 2px solid red;
             height: 55px;
-            width: 55px;
+            /* width: 55px; */
         }
         .item-4{
-            grid-row:1/2; /*1 se lkr 2 tak*/
-            /* grid-column:1/2; */
-            grid-column:doosra/tisra; /*from 2nd column to third column*/  
         }
         .item-1{
-            /* grid-row:1/2; */
-            /* or can do this also */
-            grid-row-start:1;
-            grid-row-end:2;
-
-            /* same thing */
-            grid-column:1/2;
+            grid-area: nav;
         }
     </style>
 
