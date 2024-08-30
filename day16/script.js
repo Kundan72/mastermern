@@ -13,3 +13,9 @@ if(isTrue){
 else{
     console.log("Computer is not blasting");
 }
+
+
+document.title = "Changed Title using JS"
+
+// changed the body color using Js added as inline css
+document.body.style.background = "beige"
