@@ -18,3 +18,45 @@ console.log(a+b+8)
 
 // const a1 = 6
 // a1 = a1 + 1   not possible
+
+
+console.log("let is block scoped")
+
+let x = 2
+{
+    let x = 5
+    console.log(x)
+}
+console.log(x)
+
+console.log("var is global scoped")
+
+var y = 2
+{
+    var y = 5
+    console.log(y)
+}
+console.log(y)
+
+
+// Primitive datatypes
+let m = "Kundan"
+let n = 22
+let o = 3.35;
+const p = true;   //cannot change it as i have declared it as const
+let q = undefined;
+let r = null;  //typeof null is object is wrong but universal as declared while creating
+
+console.log(m, n, o, p, q, r)
+console.log(typeof m, typeof n, typeof o, typeof p, typeof q, typeof r)
+
+
+// OBJECT (follow rules of variables while creating object)
+let O = {
+    "name":"Kundan",
+    "job code":5600,
+    "is_handsome" : true
+}
+console.log(O)
+O.salary = "1 Lakhs"  //added salary in this also
+console.log(O)
