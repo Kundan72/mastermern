@@ -1,3 +1,3 @@
-alert("Hello by JavaScript")
+alert("Hello I am JavaScript");
 
-console.log()
+console.log("JavaScript is running....");
