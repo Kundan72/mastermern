@@ -1,3 +1,5 @@
+// javaScript VARIABLES, DATATYPES and OBJECTS
+
 console.log("running JavaScript 2nd day")
 
 var a = 5
