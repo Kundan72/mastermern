@@ -1,4 +1,4 @@
-// STRINGS
+// STRINGS  immutable
 
 console.log("This is strings tutorial")
 let a = "Kundan";
