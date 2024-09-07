@@ -1,3 +1,4 @@
+// INSERTING AND REMOVING ELEMENTS USING JS
 // can change any page elements after we on design mode in console, so don't beleive in screenshots
 // document.designMode = "on"
 
