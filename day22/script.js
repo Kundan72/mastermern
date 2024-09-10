@@ -61,3 +61,6 @@ main()
 //     console.log("task 2")
  
 // })
+
+
+// GO through this topic again and notes
