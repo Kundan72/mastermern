@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        // factorial 5! = 5 * 4 * 3 * 2 * 1 = 120
+        // using loop
+        /*let fac = 1
+        n = prompt("enter number to factor ")
+        for (let index = n; index >= 1; index--) {
+            fac = fac * index
+        }
+        alert(fac)*/
+
+        
+        // using reduce
+        let a = 6
+        function factorial(number){
+            let arr = Array.from(Array(number+1).keys())  //shortrick array creation from it's keys
+            console.log(arr.slice(1,))
+            let c = arr.slice(1,).reduce((a,b) => {
+                return a*b
+            })
+            return c
+        }
+
+        // using loop with function 
+        function facFor(number){
+            let fac = 1;
+            for (let index = 1; index <= number; index++){
+                fac = fac * index
+            }
+            return fac
+        }
+        
+        console.log(factorial(a))
+        console.log(facFor(a))
+
+    </script>
+</body>
+</html>

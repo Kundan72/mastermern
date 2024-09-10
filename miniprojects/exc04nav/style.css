@@ -1,0 +1,53 @@
+/* Multicolor theme color Navbar */
+
+/* :root{
+    --fontcolor: rgb(255, 255, 255);
+    --primarybgcolor: rgb(148, 64, 244);
+    --secbgcolor:rgb(213, 177, 255);
+} */
+:root{
+    --fontcolor: rgb(255, 255, 255);
+    --primarybgcolor: rgb(77, 34, 251);
+    --secbgcolor:rgb(140, 140, 246);
+}
+/* :root{
+    --fontcolor: rgb(255, 255, 255);
+    --primarybgcolor: rgb(0, 166, 89);
+    --secbgcolor:rgb(193, 255, 224);
+} */
+/* :root{
+    --fontcolor: rgb(0, 0, 0);
+    --primarybgcolor: rgb(255, 255, 0);
+    --secbgcolor:rgb(244, 250, 201);
+} */
+
+
+body{
+    background: var(--secbgcolor);
+}
+nav{
+    border: 1px solid black;
+    background: var(--primarybgcolor);
+}
+ul{
+    list-style: none;
+    display: flex;
+
+}
+ul li{
+    padding: 10px 20px;
+    color: var(--fontcolor);
+    margin: 0;
+}
+
+li:hover{
+    cursor: pointer;
+    font-size:101%;
+    font-size: 1.02em;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: var(--fontcolor);
+}

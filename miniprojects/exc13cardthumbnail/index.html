@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardThumbnail</title>
+    <style>
+
+        .card{
+            display: flex;
+            border: 2px solid black;
+            width: 910px;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .image img{
+            width: 200px;
+            height: 150px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .text h1, p{
+            padding: 2px 0;
+        }
+
+        
+        .image{
+            position: relative;
+        }
+
+        .capsule{
+            position: absolute;
+            bottom: 4px;
+            z-index: 1;
+            right: 5px;
+            background: #242020;
+            opacity: 0.9;
+            color: white;
+            padding: 3px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image"><img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB0alxLSXCSEPITzWr-XXUiv1oglQ" alt="">
+            <div class="capsule">12:22</div>
+            </div>
+            <div class="text">
+                <h1>Introduction to Frontend | Sigma Web Dev Video #2</h1>
+                <p>CodewithHarry . 727K views . 2 months ago</p>
+            </div>
+        </div>
+    </div>
+<!-- Updating above elements dynamically -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB0alxLSXCSEPITzWr-XXUiv1oglQ -->
